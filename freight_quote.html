@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="./resources/css/freight_quote.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./index.js">
+    </script>
+  <title>Art Vandelay Trucking | Freight Quote</title>
+</head>
+<body>
+  <div class="container page-container">
+    <div class="row mt-3">
+      <div class="col-12 card outer-card" id="outerCard">
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-12 card inner-card inner-card-top">
+              <div class="row top-banner">
+                <div class="col-6 col-sm-5 col-md-4 col-lg-2 mx-auto">
+                  <a href="./index.html"><img src="./resources/css/logo.png" alt="Vandelay Trucking Logo" class="w-100"></a>
+                </div>
+                <div class="col-12 mx-auto col-md-5 col-lg-4 text-center" id="slogan">
+                  <h3><i>Importer Exporter!</i></h3>
+                </div>
+                <div class="col-3 text-right my-4 web">
+                  <h4><a href="tel:1">281-330-8004</a></h4>
+                  <h4><a href="tel:2">407-867-5309</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
+          <button class="my-2 mr-auto ml-2 px-3 py-1 mobile" id="phone">
+            <a href="tel:3"><span class="fa fa-phone fa-2x"></span></a>
+          </button>
+          <button class="mobile px-2 py-1 px-3 mr-2" id="menu" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars fa-2x"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-center">
+              <a class="nav-item nav-link" href="./index.html" id="home">Home</a>
+              <a class="nav-item nav-link active" href="./freight_quote.html" id="quote">Freight Quote</a>
+              <a class="nav-item nav-link" href="./services.html" id="services">Services</a>
+              <a class="nav-item nav-link" href="./about_us.html" id="about">About Us</a>
+              <a class="nav-item nav-link" href="./hiring.html" id="drive">Drive for Vandelay</a>
+              <a class="nav-item nav-link" href="./contact.html" id="contact">Contact Us</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container">
+          <div class="row mid-banner ">
+            <div class="col-12">
+              <form id="contact-form" action="https://formspree.io/f/mleogypr" method="POST">
+                <div class="row">
+                  <div class="col-11 col-sm-12 col-md-6 col-xl py-2 mx-auto">
+                    <h5 class="my-4">Shipper Information:</h5>
+                    <p>Name:
+                    <input type="text" name="Client Name"  class="form-control" required></p>
+                    <p>Address:
+                    <input type="text" name="Client Address"  class="form-control" required></p>
+                    <p>City:
+                    <input type="text" name="Client City"  class="form-control" required></p>
+                    <p>State:
+                    <input type="text" name="Client State"  class="form-control" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                      minlength="2" maxlength="2"></p>
+                    <p>Zip Code:
+                    <input type="text" name="Client Zip Code"  class="form-control" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                      minlength="5" maxlength="5" required></p>
+                    <p>*Phone No.:
+                      <input type="text" name="Phone Number" class="form-control" 
+                      oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                      minlength="10" maxlength="10" required>
+                    <p>*E-mail:
+                    <input type="email" name="Client E-mail"  class="form-control" required></p>
+                  </div>
+  
+                  <div class="col-11 col-sm-12 col-md-6 col-xl py-2 mx-auto">
+                    <h5 class="my-4">Origin:</h5>
+                    <p>City:
+                    <input type="text" name="Origin City"  class="form-control" required></p>
+                    <p>State:
+                    <input type="text" name="Origin State"  class="form-control" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                      minlength="2" maxlength="2"></p>
+                    <p>*Zip Code:
+                    <input type="text" name="Origin Zip Code"  class="form-control" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                      minlength="5" maxlength="5" required></p>
+                    <h5 class="my-4" id="destination">Destination:</h5>
+                    <p>City:
+                    <input type="text" name="Destination City"  class="form-control" required></p>
+                    <p>State:
+                    <input type="text" name="Destination State"  class="form-control" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                      minlength="2" maxlength="2"></p>
+                    <p>*Zip Code:
+                    <input type="text" name="Destination Zip Code"  class="form-control" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                      minlength="5" maxlength="5" required></p>
+                  </div>
+  
+                  <div class="col-11 col-sm-12 col-md-6 col-xl py-2 mx-auto">
+                    <h5 class="my-4">Other Info:</h5>
+                    <p>Ship Date:
+                    <input type="date" name="Ship Date"  class="form-control" required></p>
+                    <p>Due Date:
+                    <input type="date" name="Due Date"  class="form-control" required></p>
+                    <p>Number of Skids/Footage:
+                    <input type="text" name="Number of Skids/Footage"  class="form-control" required></p>
+                    <p>Weight:
+                    <input type="text" name="Weight"  class="form-control" required></p>
+                    <p>Product / Class:
+                    <input type="text" name="Product / Class"  class="form-control" required></p>
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Freight Type:</p>
+                        <div class="row">
+                          <div class="col col-lg-7">
+                            <p><input id="conestoga" type="radio" name="Freight Type" value="Conestoga"> Conestoga Service</p>
+                        </div>
+                        <div class="col col-lg">
+                            <p><input  id="van" type="radio" name="Freight Type" value="Van"> Dry Van</p>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-11 col-sm-12 col-md-6 col-xl py-2 mx-auto">
+                    <div class="form-group">
+                      <h5 class="my-4">Message</h5>
+                      <p>Comments & Requirements:
+                      <textarea class="form-control" rows="10" name="Comments" id="comments"></textarea></p>
+                      <p class="my-5">* Required field</p>
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-12 text-center">
+                          <input class="btn btn-danger" type="submit" value="Get FREE Quote Now!" style="font-weight: bold; font-size: 20px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </form>
+            </div>
+          </div>
+  
+        </div>
+
+        
+        
+        <div class="container-fluid">
+          <div class="row text-center my-4 bottom-nav d-flex justify-content-center">
+            <div class="col-11 col-md-12">
+            <a href="./index.html">Home</a> <span class="mx-2">|</span>
+            <a href="./freight_quote.html">Freight Quote</a> <span class="mx-2">|</span>
+            <a href="./services.html">Services</a> <span class="mx-2">|</span>  
+            <a href="./about_us.html">About Us</a> <span class="mx-2">|</span>
+            <a href="./hiring.html">Drive for Vandelay</a> <span class="mx-2">|</span>   
+            <a href="./contact.html">Contact Us</a>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer class="row text-center my-5">
+      <div class="col">
+        <p>Copyright Vandelay Trucking. All rights reserved.</p>
+        <p>Website Developed by <a href="">Alex Washington</a></p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    $(document).ready(function() {
+  if(window.innerWidth < 600){
+    $('#outerCard').removeClass('card');
+  }
+});
+  </script>
+
+</body>
+</html>

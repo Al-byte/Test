@@ -1,0 +1,342 @@
+html, body {
+    background-color: black;
+    overflow-x: auto;
+}
+
+.hide, .mobile {
+    display: none;
+}
+
+.mobile .nav-link {
+    border: none;
+    padding: 15px;
+    background-color: black;
+}
+
+.nav-link {
+    border: 1px solid white;
+    padding: 15px;
+    background-color: black;
+    font-weight: 600;
+    color: white ;
+}
+
+.web-nav-link {
+    border: 0.5px solid grey;
+    padding: 15px;
+    background-color: black;
+}
+
+.nav-link a, .web-nav-link a {
+    text-decoration: none;
+    color: white !important;
+}
+
+.nav-link:hover, .web-nav-link:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.top-banner {
+    color: white;
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+    background-image: url("./top-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.top-banner a {
+    color: white;
+}
+
+.outer-card {
+    background-color: lightgray;
+    border-radius: 10px !important;
+}
+
+.inner-card, .mid-banner img {
+   
+   border:0px solid rgba(0,6,12,.5);
+    box-shadow: 0 2px 12px rgba(0,6,12,.5);
+   -moz-box-shadow: 0 2px 12px rgba(0,6,12,.5);
+   -webkit-box-shadow: 0 2px 12px rgba(0,6,12,.5);
+   -khtml-box-shadow: 0 2px 12px rgba(0,6,12,.5);
+   width: 100%;
+   height: auto;
+}
+
+.inner-card-top {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.mid-banner {
+    background-color: black;
+    color: white;
+    border-radius: 0 0 10px 10px !important;
+}
+
+.navbar-nav {
+    border: 1px solid white;
+    background-color: black;
+}
+
+.navbar-nav a, .fa {
+    color: white !important;
+}
+
+.web-nav {
+    margin-top: -5px;
+    margin-bottom: -5px;
+    
+}
+
+nav {
+    padding: 0 !important;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+nav a {
+    border: none !important;
+}
+
+
+
+button {
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.click {
+    background-color: grey;
+}
+
+p {
+    font-size: 14px;
+}
+
+.top-banner h4 {
+    font-weight: bold;
+}
+
+.active {
+    background-color: red !important;
+}
+
+.bottom-nav a {
+    color: black !important;
+}
+
+
+footer {
+    color: white;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .web {
+        display: none !important;
+    }
+
+    .mobile {
+        display: flex !important;
+    }
+
+    .top-banner {
+        min-height: 202px;
+        background-image: none;
+    }
+
+    /*.mid-banner img {
+        height: 176px !important;
+    }*/
+
+    .nav-link {
+        color: white !important;
+    }
+    
+}
+
+/*Range up to 600px*/
+@media (max-width: 599.98px) {
+    .page-container, .container, .banner, .mid-banner {
+        padding: 0;
+    }
+
+    .page-container .mt-3 {
+        margin-top: 0 !important;
+    }
+    
+
+    .card, .top-banner {
+        border-radius: 0 !important;
+    }
+
+    #slogan {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .web {
+        display: none !important;
+    }
+
+    .mobile {
+        display: flex !important;
+    }
+
+    .top-banner {
+        max-height: 222px !important;
+        background-image: none;
+    }
+
+    #slogan {
+        margin-top: -30px !important;
+        margin-bottom: 10px;
+    }
+
+
+    /*.mid-banner img {
+        height: 216px !important;
+    }*/
+    
+    .nav-link {
+        border: none !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .web {
+        display: none !important;
+    }
+
+    .mobile {
+        display: flex !important;
+    }
+
+    .top-banner {
+        min-height: 178px;
+    }
+
+    #slogan {
+        margin-top: 70px !important;
+    }
+
+    /*.mid-banner img {
+        height: 260px !important;
+    }*/
+
+    #destination {
+        margin-top: 46px !important;
+    }
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .nav-link {
+        color: white !important;
+        padding: 10px 25px !important;
+        border: 0.5px solid white !important;
+    }
+
+    .top-banner {
+        min-height: 149px !important;
+    }
+
+    #slogan {
+        margin-top: 50px;
+    }
+
+    /*.mid-banner img {
+        height: 360px !important;
+    }*/
+
+    #home {
+        width: 121px;
+    }
+
+    #quote {
+        width: 175px;
+    }
+    
+    #services {
+        width: 140px;
+    }
+    
+    #about {
+        width: 143px;
+    }
+    
+    #drive {
+        width: 192px;
+    }
+    
+    #contact {
+        width: 157px;
+    }
+
+    #destination {
+        margin-top: 46px !important;
+    }
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .nav-link {
+        color: white !important;
+        padding: 10px 40px !important;
+        border: 0.5px solid white !important;
+    }
+
+    .top-banner {
+        min-height: 178px;
+    }
+
+    #slogan {
+        margin-top: 70px;;
+    }
+     
+    /*.mid-banner img {
+        height: 412px !important;
+    }*/
+
+    #home {
+        width: 151px;
+    }
+
+    #quote {
+        width: 206px;
+    }
+    
+    #services {
+        width: 169px;
+    }
+    
+    #about {
+        width: 174px;
+    }
+    
+    #drive {
+        width: 223px;
+    }
+    
+    #contact {
+        width: 183px;
+    }
+
+    #destination {
+        margin-top: 46px !important;
+    }
+    
+}
